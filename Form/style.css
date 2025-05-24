@@ -1,0 +1,79 @@
+/* General Page Styling */
+
+body {
+    background-color: #0d0d0d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffd700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    width: 100% ;    
+
+
+/* Form Container */
+form {
+    background-color: #1a1a1a;
+    border: 2px solid #ffd700;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 0 15px #ffd70033;
+}
+
+/* Headline */
+h2 {
+    text-align: center;
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input Fields, Select, Textarea */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffd70099;
+    border-radius: 5px;
+    background-color: #262626;
+    color: #ffd700;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Dropdown */
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23ffd700' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #ffd700;
+    color: #0d0d0d;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #e6c200;
+}

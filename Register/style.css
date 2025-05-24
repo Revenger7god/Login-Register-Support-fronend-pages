@@ -1,0 +1,120 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+.background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/Images/regbg.jpeg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px);
+  z-index: -1;
+}
+
+.registerbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  padding: 40px 30px;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: left;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 14px;
+  color: aqua;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #00e1ff;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.registerbutton {
+  background-color: #00e1ff;
+  border: none;
+  border-radius: 6px;
+  height: 40px;
+  width: 100%;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.registerbutton:hover {
+  background-color: #02c4d3;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+  font-size: 13px;
+}
+
+.checkbox {
+
+    gap: 0px ;
+}
+
+.checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #00e1ff;
+}
+
+
+p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ffffffcc; /* soft white */
+  text-align: center;
+  line-height: 1.6;
+}
+
