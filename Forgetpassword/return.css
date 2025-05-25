@@ -19,7 +19,8 @@ html, body {
   left: 0;
   height: 100%;
   width: 100%;
-  background: url('/Images/regbg.jpeg') no-repeat center center/cover;
+  background: url('/Images/resetbg.mp4') ;
+  /* video: url('https://pin.it/5YmeSA959'); */
   filter: blur(6px);
   z-index: -1;
 }
