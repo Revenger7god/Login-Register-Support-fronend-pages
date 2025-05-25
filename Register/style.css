@@ -23,7 +23,7 @@ nav {
 .logo {
   position: fixed;
   top: 0; left: 0;
-  width: 100%;
+  width: 40%;
   height: 60px;
   src: url('/Images/logo.png');
   background-size: contain;
@@ -31,7 +31,7 @@ nav {
   display: flex;
 }
 .logo img {
-  height: 40px;
+  height: 60px;
   width: auto;
   object-fit: contain;
 }

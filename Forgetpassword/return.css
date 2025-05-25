@@ -1,0 +1,73 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+/* Background image */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url('/Images/regbg.jpeg') no-repeat center center/cover;
+  filter: blur(6px);
+  z-index: -1;
+}
+
+/* Confirmation box */
+.confirmation-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  max-width: 400px;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Headline */
+.confirmation-box h1 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Message */
+.confirmation-box p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #ffffffcc;
+}
+
+/* Button */
+.confirmation-box .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00e1ff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.confirmation-box .button:hover {
+  background-color: #02c4d3;
+}

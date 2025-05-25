@@ -13,7 +13,7 @@ body {
 
 
 /* Form Container */
-form {
+.form {
     background-color: #1a1a1a;
     border: 2px solid #ffd700;
     padding: 30px;
@@ -27,6 +27,8 @@ h2 {
     text-align: center;
     color: #ffd700;
     margin-bottom: 20px;
+    z-index: 1000;
+    padding-top: 40px;
 }
 
 /* Labels */
@@ -77,3 +79,58 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #e6c200;
 }
+
+nav {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+  backdrop-filter: blur(0);
+  display: flex;
+  align-items:center;
+  justify-content: end;
+  z-index: 100 ;
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+ul li {
+  margin: 0 15px;
+}
+ul li a {
+  text-decoration: none;
+  color: rgb(246, 234, 2);
+  font-weight: bold;
+  transition: color 0.3s ease;
+  padding: 10px 15px;
+    transition: ease-in-out 0.3s;
+}
+ul li a:hover {
+  /* border: 1px solid white; */
+  border-radius: 1px;
+border-bottom: #00e1ff 4px solid;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo {
+  position: fixed;
+  top: 0; left: 0;
+  width: 40%;
+  height: 60px;
+  src: url('/Images/logo.png');
+  background-size: contain;
+  z-index: 1000;
+  display: flex;
+} 
