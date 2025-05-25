@@ -1,10 +1,68 @@
-body, html {
+body,main{
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
   color: white;
 }
+
+nav {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items:center;
+  justify-content: end;
+  z-index: 100 ;
+}
+
+.logo {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 60px;
+  src: url('/Images/logo.png');
+  background-size: contain;
+  z-index: 1000;
+  display: flex;
+}
+.logo img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+ 
+.home  {
+    justify-content: end;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+ul li {
+  margin: 0 15px;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  padding: 10px 15px;
+    transition: ease-in-out 0.3s;
+}
+ul li a:hover {
+  /* border: 1px solid white; */
+  border-radius: 1px;
+border-bottom: #00e1ff 4px solid;
+}
+
 
 main {
   height: 100%;
@@ -24,7 +82,7 @@ main {
 }
 
 .registerbox {
-  position: absolute;
+  position:  absolute;
   top: 50%;
   left: 50%;
   width: 350px;
@@ -35,7 +93,10 @@ main {
   border-radius: 12px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 10;
   text-align: left;
+  margin-top:6%;
+
 }
 
 h2 {
@@ -117,4 +178,3 @@ p {
   text-align: center;
   line-height: 1.6;
 }
-
