@@ -17,9 +17,11 @@ top: 0%;
     height: 100%;
     position: fixed;
     z-index: -1;
-    filter: blur(4px);
+    /* filter: blur(4px); */
     object-fit: cover;
     size: 100%;
+    filter: blur(4px  );
+    /* opacity: 0.7 ;  */
 
 }
 
@@ -85,14 +87,44 @@ ul li a:hover {
  border-bottom: 4px solid #00e1ff;
 }
 
-.homeleft {
-margin-top: 5%;
-  height: 90%;
-  width: 50%;
-  margin-left: 5%;
-  border-radius: 5%;
-  background-color: aliceblue;
+.homeleftbg {
+height: 90%;
+background-color: white;
+width: 80%;
+position: absolute;
+margin: 0px;
+margin-left: 50% ;
+justify-content: center;
+display: flex;
+align-items: center;
+transform: translate(-50%, -50%);
+  top: 60%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+
+
+
 }
+
+.homerightbg {
+
+height: 100%;
+width: 60%;
+position: absolute;
+margin: 0px;
+margin-left: 40% ;
+justify-content: center;
+display: flex;
+align-items: center;
+transform: translate(-50%, -50%);
+  top: 50%;
+  border-radius: 10px;
+background-image: url();
+
+}
+
+
 
 
 .think {
@@ -100,3 +132,5 @@ margin-top: 5%;
 position: absolute;
 left: 60%;
 }
+
+
